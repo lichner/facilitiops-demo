@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+
+a {
+  color: oklch(0.3438 0.0269 95.7226);
+}
+
+a:hover {
+  color: oklch(0.1908 0.002 106.5859);
+}
+
+summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+iframe.example-frame {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: #fff;
+}
