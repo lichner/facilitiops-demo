@@ -21,7 +21,7 @@ jobs:
       - name: Assemble static site
         run: |
           mkdir -p _site
-          cp ProductLedSlite.dc.html ExampleEmail.dc.html PortfolioSummary.dc.html site.css CNAME _site/
+          cp ProductLedSlite.dc.html ExampleEmail.dc.html PortfolioSummary.dc.html site.css CNAME og-image.png _site/
           cp ProductLedSlite.dc.html _site/index.html
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
