@@ -65,6 +65,17 @@ class StaticSiteContract(unittest.TestCase):
         self.assertIn("ProductLedSlite.dc.html", workflow.read_text())
         self.assertIn("index.html", workflow.read_text())
 
+    def test_landing_page_title_and_icons_are_published(self):
+        markup = (ROOT / "ProductLedSlite.dc.html").read_text()
+        head = markup.split("</head>", 1)[0]
+        workflow = (ROOT / ".github/workflows/pages.yml").read_text()
+        self.assertIn("<title>FacilitiOps</title>", head)
+        for icon in ("favicon.svg", "favicon.ico", "apple-touch-icon.png"):
+            with self.subTest(icon=icon):
+                self.assertIn(f'href="./{icon}"', head)
+                self.assertTrue((ROOT / icon).is_file())
+                self.assertIn(icon, workflow)
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
