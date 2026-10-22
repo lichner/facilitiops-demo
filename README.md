@@ -14,7 +14,7 @@ The content, inline style values, examples, and page layout are preserved.
 - `site.css` — shared page defaults and embedded-example frame styling.
 - `.github/workflows/pages.yml` — publishes the static files to GitHub Pages
   and makes the landing page available at `/` as well as its original route.
-- `CNAME` — configures the published site for `impex.facilitops.io`.
+- `CNAME` — configures the published site for `impex.facilitiops.io`.
 
 ## Viewing
 
@@ -25,7 +25,7 @@ pages. Run `python3 tests/check_static_site.py` for source-level checks.
 ## GitHub Pages setup
 
 After pushing the source, select **GitHub Actions** as the Pages build source
-in the repository's Pages settings and set `impex.facilitops.io` as the
+in the repository's Pages settings and set `impex.facilitiops.io` as the
 custom domain. At the DNS provider, create a `CNAME` record for `impex`
 pointing to `lichner.github.io`. The repository `CNAME` file documents the
 site domain; custom Actions deployments use the repository Pages setting as

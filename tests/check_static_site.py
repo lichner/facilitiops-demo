@@ -61,7 +61,7 @@ class StaticSiteContract(unittest.TestCase):
         workflow = ROOT / ".github/workflows/pages.yml"
         self.assertTrue(workflow.is_file())
         self.assertTrue((ROOT / "CNAME").is_file())
-        self.assertIn("impex.facilitops.io", (ROOT / "CNAME").read_text())
+        self.assertIn("impex.facilitiops.io", (ROOT / "CNAME").read_text())
         self.assertIn("ProductLedSlite.dc.html", workflow.read_text())
         self.assertIn("index.html", workflow.read_text())
 
