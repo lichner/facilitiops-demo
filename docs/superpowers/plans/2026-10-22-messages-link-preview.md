@@ -14,7 +14,7 @@
 
 - Preserve the existing page content and title.
 - Do not add dependencies or change the static hosting model.
-- Use `https://impex.facilitiops.io/og-image.png` as the absolute share image URL.
+- Use `https://facilitiops.io/og-image.png` as the absolute share image URL.
 - Report deployment and Apple Messages cache acceptance separately from source validation.
 
 ## Review Focus
@@ -35,7 +35,7 @@
 - Modify: `.github/workflows/pages.yml`
 
 **Interfaces:**
-- Produces metadata for canonical URL `https://impex.facilitiops.io/` and image `https://impex.facilitiops.io/og-image.png`.
+- Produces metadata for canonical URL `https://facilitiops.io/` and image `https://facilitiops.io/og-image.png`.
 - Produces `_site/og-image.png` in the existing GitHub Pages build.
 
 - [x] Copy the generated brand card into the task worktree as `og-image.png`, crop/resize it to 1200×630, and inspect the result for legible, correctly spelled logo and copy.

@@ -2,7 +2,7 @@
 
 ## Intent and goals
 
-Make links to `https://impex.facilitiops.io/` display a clear FacilitiOps preview in Apple Messages and other link unfurlers. Use the supplied brand reference in a landscape share image and describe the site as facility management software.
+Make links to `https://facilitiops.io/` display a clear FacilitiOps preview in Apple Messages and other link unfurlers. Use the supplied brand reference in a landscape share image and describe the site as facility management software.
 
 ## Non-goals and constraints
 
@@ -19,7 +19,7 @@ Make links to `https://impex.facilitiops.io/` display a clear FacilitiOps previe
 
 ## Implementation
 
-Add canonical, Open Graph, and Twitter card metadata to `ProductLedSlite.dc.html`. Store a 1200×630 share image at the site root and copy it into the GitHub Pages artifact in `.github/workflows/pages.yml`. Use the absolute image URL `https://impex.facilitiops.io/og-image.png`.
+Add canonical, Open Graph, and Twitter card metadata to `ProductLedSlite.dc.html`. Store a 1200×630 share image at the site root and copy it into the GitHub Pages artifact in `.github/workflows/pages.yml`. Use the absolute image URL `https://facilitiops.io/og-image.png`.
 
 ## Acceptance and proof
 
